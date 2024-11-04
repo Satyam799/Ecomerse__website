@@ -5,6 +5,7 @@
 **/node_modules/
 **/uploads/
 .pnp.js
+.env
 
 # testing
 /coverage

@@ -1,0 +1,29 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "ecomerse application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon backend/app.js",
+    "client": "npm start --prefix fronthand",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "data:import": "node backend/seed.js -g",
+    "data:delete": "node backend/seed.js -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.5",
+    "bcrypt": "^5.1.1",
+    "cookie": "^0.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4"
+  }
+}
